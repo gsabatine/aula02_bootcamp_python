@@ -7,14 +7,29 @@
 # print("A soma dos dois numeros e:", resultado_soma)
 
 # Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
-num = int(input("Digite um número: "))
-num = 18  # Exemplo de entrada
-resultado_resto = num % 5
-print("O resto da divisão por 5 é:", resultado_resto)
+# num = int(input("Digite um número: "))
+# num = 18  # Exemplo de entrada
+# resultado_resto = num % 5
+# print("O resto da divisão por 5 é:", resultado_resto)
 
 # Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+# Número_1 = int(input("Digite um número: "))
+# Número_2 = int(input("Digite outro número: "))
+# resultado_multiplicação = Número_1 * Número_2
+# print("A multiplicação dos dois números e:", resultado_multiplicação)
+
 # Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
+# Número_1 = int(input("Digite um número: "))
+# Número_2 = int(input("Digite outro número: "))
+# resultado_divisão = Número_1 // Número_2
+# print("O resultado da sua divisão é:", resultado_divisão)
+
 # Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+Número_1 = int(input("Digite um Número: "))
+Número_2 = int(input("Digite outro Número: "))
+resultado_do_calculo = Número_1 ** Número_2
+print("O resultado da conta é: ", resultado_do_calculo)
+
 # Números de Ponto Flutuante (float)
 # Escreva um programa que receba dois números flutuantes e realize sua adição.
 # Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
