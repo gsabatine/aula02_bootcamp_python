@@ -55,16 +55,37 @@
 # print(f"{Temperatura}C é igual a {Temperatura_Fahrenheit}F")
 
 #10 - Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
-import math
-raio = float(input("Digite o raio: "))
-area_circulo = math.pi * raio ** 2
-print("A area do Circulo é: ", area_circulo)
+# import math
+# raio = float(input("Digite o raio: "))
+# area_circulo = math.pi * raio ** 2
+# print("A area do Circulo é: ", area_circulo)
+
 # Strings (str)
-# Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
-# Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
-# Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
-# Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
-# Escreva um programa que concatene duas strings fornecidas pelo usuário.
+#11 - Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
+# string = str(input("Digite sua string: "))
+# string_convertida = string.upper()
+# print("Texto convertido:", string_convertida)
+
+#12 - Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
+# nome = str(input("Insira seu nome: "))
+# nome_convertido = nome.lower()
+# print("Seu nome em minusculo: ", nome_convertido)
+
+#13 - Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
+# string = input("Insira sua string: ")
+# frase_convertida =  string.strip()
+# print("String final:", frase_convertida)
+
+#14 - Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
+# data = input("Insira sua data aqui dd/mm/aaaa: ")
+# data_separada = data.split(sep="/")
+# print("Sua data separada:", data_separada)
+
+#15 Escreva um programa que concatene duas strings fornecidas pelo usuário.
+string1 = input("Primeira string: ")
+string2 = input("Segunda string: ")
+string_concatenada =  string1 + string2
+print("String concatenada:", string_concatenada)
 # Booleanos (bool)
 # Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
 # Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
