@@ -81,14 +81,46 @@
 # data_separada = data.split(sep="/")
 # print("Sua data separada:", data_separada)
 
-#15 Escreva um programa que concatene duas strings fornecidas pelo usuário.
-string1 = input("Primeira string: ")
-string2 = input("Segunda string: ")
-string_concatenada =  string1 + string2
-print("String concatenada:", string_concatenada)
+#15 - Escreva um programa que concatene duas strings fornecidas pelo usuário.
+# string1 = input("Primeira string: ")
+# string2 = input("Segunda string: ")
+# string_concatenada =  string1 + string2
+# print("String concatenada:", string_concatenada)
+
 # Booleanos (bool)
-# Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
-# Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
-# Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
-# Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
-# Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+#16 - Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+# valor1 = True
+# valor2 = False
+# resultado_and = valor1 and valor2
+# print("Resultado do AND lógico:", resultado_and)
+
+#17 - Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+# valor1 = bool(input("Seu primeiro valor: "))
+# valor2 = bool(input("Segundo valor: "))
+# resultado_or = valor1 or valor2
+# print("Resultado OR:", resultado_or)
+
+#18 - Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+# valor1 = True
+# print(valor1)
+
+# valor1 = not valor1
+# print(valor1)
+
+# valor1 = not valor1
+# print(valor1)
+
+# valor1 = not valor1
+# print(valor1)
+
+#19 - Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+num1 = input("Seu primeiro numero: ")
+num2 = input("Seu segundo numero: ")
+resultado_final = (num1 == num2)
+print("Resultado comparação:", resultado_final)
+
+#20 - Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+# num1 = input("Seu primeiro numero: ")
+# num2 = input("Seu segundo numero: ")
+# resultado_verificação = (num1 != num2)
+# print("Resultado verificação:", resultado_verificação)
