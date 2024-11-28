@@ -1,41 +1,64 @@
 # Exercícios
 # Inteiros (int)
-# Escreva um programa que soma dois números inteiros inseridos pelo usuário.
+# 1 - Escreva um programa que soma dois números inteiros inseridos pelo usuário.
 # Numero_1 = int(input("Digite um numero:"))
 # Numero_2 = int(input("Digite outro numero:"))
 # resultado_soma = Numero_1 + Numero_2
 # print("A soma dos dois numeros e:", resultado_soma)
 
-# Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
+# 2 - Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
 # num = int(input("Digite um número: "))
 # num = 18  # Exemplo de entrada
 # resultado_resto = num % 5
 # print("O resto da divisão por 5 é:", resultado_resto)
 
-# Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+# 3 - Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 # Número_1 = int(input("Digite um número: "))
 # Número_2 = int(input("Digite outro número: "))
 # resultado_multiplicação = Número_1 * Número_2
 # print("A multiplicação dos dois números e:", resultado_multiplicação)
 
-# Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
+# 4 - Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 # Número_1 = int(input("Digite um número: "))
 # Número_2 = int(input("Digite outro número: "))
 # resultado_divisão = Número_1 // Número_2
 # print("O resultado da sua divisão é:", resultado_divisão)
 
-# Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
-Número_1 = int(input("Digite um Número: "))
-Número_2 = int(input("Digite outro Número: "))
-resultado_do_calculo = Número_1 ** Número_2
-print("O resultado da conta é: ", resultado_do_calculo)
+# 5 - Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+# Número_1 = int(input("Digite um Número: "))
+# Número_2 = int(input("Digite outro Número: "))
+# resultado_do_calculo = Número_1 ** Número_2
+# print("O resultado da conta é: ", resultado_do_calculo)
 
 # Números de Ponto Flutuante (float)
-# Escreva um programa que receba dois números flutuantes e realize sua adição.
-# Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
-# Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
-# Faça um programa que converta a temperatura de Celsius para Fahrenheit.
-# Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+# 6 - Escreva um programa que receba dois números flutuantes e realize sua adição.
+# Número_1 = float(input("Digite um número: "))
+# Número_2 = float(input("Digite outro número: "))
+# resultado_adição =  Número_1 + Número_2
+# print("O resultado da adição foi: ", resultado_adição)
+
+# 7 - Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+# Número_1 = float(input("Digite um número: "))
+# Número_2 = float(input("Digite outro número: "))
+# resultado_média = (Número_1 + Número_2) / 2
+# print("A média dos numeros é: ", resultado_média)
+
+# 8 - Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+# Número_1 = float(input("Digite a base: "))
+# Número_2 = float(input("Digite o expoente: "))
+# resultado_calculo = Número_1 ** Número_2
+# print("O Resultado da potencia é:", resultado_calculo)
+
+# 9 - Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+# Temperatura = float(input("Digite a temperatura: "))
+# Temperatura_Fahrenheit = (Temperatura * 9/5) + 32
+# print(f"{Temperatura}C é igual a {Temperatura_Fahrenheit}F")
+
+#10 - Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+import math
+raio = float(input("Digite o raio: "))
+area_circulo = math.pi * raio ** 2
+print("A area do Circulo é: ", area_circulo)
 # Strings (str)
 # Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
 # Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
