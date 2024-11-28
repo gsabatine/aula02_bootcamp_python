@@ -1,6 +1,6 @@
-# Exercícios Python
+# # Exercícios Python
 
-# Inteiros (int)
+# # Inteiros (int)
 # 1 - Escreva um programa que soma dois números inteiros inseridos pelo usuário.
 Numero_1 = int(input("Digite um numero:"))
 Numero_2 = int(input("Digite outro numero:"))
@@ -31,7 +31,7 @@ Número_2 = int(input("Digite outro Número: "))
 resultado_do_calculo = Número_1 ** Número_2
 print("O resultado da conta é: ", resultado_do_calculo)
 
-# Números de Ponto Flutuante (float)
+# # Números de Ponto Flutuante (float)
 # 6 - Escreva um programa que receba dois números flutuantes e realize sua adição.
 Número_1 = float(input("Digite um número: "))
 Número_2 = float(input("Digite outro número: "))
@@ -88,7 +88,7 @@ string2 = input("Segunda string: ")
 string_concatenada =  string1 + string2
 print("String concatenada:", string_concatenada)
 
-# Booleanos (bool)
+# # Booleanos (bool)
 #16 - Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
 valor1 = True
 valor2 = False
@@ -115,13 +115,13 @@ print(valor1)
 valor1 = not valor1
 print(valor1)
 
-#19 - Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+# #19 - Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 num1 = input("Seu primeiro numero: ")
 num2 = input("Seu segundo numero: ")
 resultado_final = (num1 == num2)
 print("Resultado comparação:", resultado_final)
 
-#20 - Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+# #20 - Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 num1 = input("Seu primeiro numero: ")
 num2 = input("Seu segundo numero: ")
 resultado_verificação = (num1 != num2)
@@ -130,7 +130,66 @@ print("Resultado verificação:", resultado_verificação)
 #### try-except e if
 
 # 21: Conversor de Temperatura
+try:
+    Temperatura_celsius = float(input("Digite a temperatura: "))
+    Temperatura_Fahrenheit = (Temperatura_celsius * 9/5) + 32
+    print(f"{Temperatura_celsius}C é igual a {Temperatura_Fahrenheit}F")
+except ValueError:
+    print("Digite apenas números")
+
 # 22: Verificador de Palíndromo
+frase = input("Digite uma frase: ")
+if isinstance(frase, str):
+    formatado = frase.replace(" ", "").lower()
+    if formatado == formatado [::-1]:
+        print("É um palíndromo.")
+    else:
+        print("Não é um palíndromo.")
+else:
+    print("Entrada inválida. Por favor digite uma palavra ou frase.")
+
 # 23: Calculadora Simples
+try:
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    operador = input("Digte o operador (+, -, * ou /): ")
+    if operador == '+':
+        resultado = num1 + num2
+    elif operador == '-':
+        resultado = num1 - num2
+    elif operador == '*':
+        resultado = num1 * num2
+    elif operador == '/' and num2 != 0:
+        resultado = num1 / num2
+    else:
+        print("Operador inserido inválido ou divisão por zero.")
+    print("Resultado", resultado)
+except ValueError:
+    print("Erro: Entrada Inválida. Certifique de inserir corretamente números e operadores.")
+
 # 24: Classificador de Números
+try: 
+    numero = float(input("Digite um número: "))
+    if numero > 0:
+        print("Positivo.")
+    elif numero < 0:
+        print("Negativo.")
+    else: 
+        print("Zero")
+    if numero % 2 == 0:
+        print("Par")
+    else:
+        print("Impar")
+except ValueError:
+    print("Por favor, digite um número!")
+
 # 25: Conversão de Tipo com Validação
+entrada_lista = input("Digite uma lista de números separados por vírgula: ")
+numeros_str = entrada_lista.split(",")
+numeros_int = []
+try:
+    for num in numeros_str:
+        numeros_int.append(int(num.strip()))
+    print("Lista de inteiros:", numeros_int)
+except ValueError:
+    print("Erro: certifique-se de que todos os elementos são números inteiros válidos.")
